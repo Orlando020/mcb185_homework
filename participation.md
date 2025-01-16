@@ -35,6 +35,10 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Helped make improvment to course github over markdown website
 	+ Total 5 points 
 - Week 2
+	+ Attended class Tuesday
+	+ Introduced myself to Mike and Malik
+	+ I met Sophie 
+	+ Total 3 points
 - Week 3
 - Week 4
 - Week 5
