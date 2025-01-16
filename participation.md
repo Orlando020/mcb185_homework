@@ -37,7 +37,7 @@ more than one point per category. There is a maximum of 5 points each week.
 - Week 2
 	+ Attended class Tuesday
 	+ Introduced myself to Mike and Malik
-	+ I met Sophie 
+	+ I met Sophie on Thursday
 	+ Total 3 points
 - Week 3
 - Week 4
