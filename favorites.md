@@ -12,3 +12,4 @@
 ## UC Davis water fountains ##
  + Memorial Union behind front desk
  + Wellman 2nd floor
+ 
