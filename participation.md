@@ -30,7 +30,7 @@ more than one point per category. There is a maximum of 5 points each week.
 - Week 1
 	+ Attended class Tuesday
 	+ Asked a question in class
-	+ Introduced myself to steven
+	+ Introduced myself to Steven
 	+ Attended class Thursday
 	+ Helped make improvment to course github over markdown website
 	+ Total 5 points 
@@ -47,6 +47,11 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Got help and helped classmate with Shannon function problem
 	+ Total 4 points
 - Week 4
+	+ Attended class Tuesday
+	+ Attended class Thursday
+	+ Introduced myself to Yusuf
+	+ Did Assessment 1 in class
+	+ Total 4 points
 - Week 5
 - Week 6
 - Week 7
