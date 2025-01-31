@@ -51,7 +51,8 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Attended class Thursday
 	+ Introduced myself to Yusuf
 	+ Did Assessment 1 in class
-	+ Total 4 points
+	+ Asked Lilith about help on the prime number function
+	+ Total 5 points
 - Week 5
 - Week 6
 - Week 7
