@@ -54,6 +54,12 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Asked Lilith about help on the prime number function
 	+ Total 5 points
 - Week 5
+	+ Attended class Tuesday
+	+ Attended class Thursday
+	+ Demoed in class with Pythagorean triples
+	+ Introduced myself to Anita and Jenny
+	+ Asked Lilith for clarity on what does 24savingthrows.py wants
+	+ Total 5 points
 - Week 6
 - Week 7
 - Week 8
