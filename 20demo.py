@@ -117,10 +117,58 @@ def dice4D6d1():
     if 3*c < b+a+d: c = 0
     if 3*d < b+c+a: d = 0
     return a+b+c+d
-
+#descendign order means you donnt have to check repreats
 
 def det_avg(repeats, function):
     total = 0
     for i in range (repeats+1):
         total = total + function()
     return total/repeats
+    
+tupletest = 1, 'a', 1.2
+#print(tupletest)
+integer, string, string = tupletest
+#print(integer, string)
+#took latest assignment
+
+#basket = 1,2,3,4,5,'snake',2.3
+#for i in basket:
+#    print(i)
+    
+#for i in range (51,0,-1):
+#    prime = True
+#    for a in range(2,(i//2)+3):
+#        if i % a == 0: prime = False
+#    if i == 1: print(i) 
+#    elif prime: print(i,'*')
+#    elif not prime: print(i)
+
+#def over2(number):
+#    return number/2
+
+#def over3(number):
+#    return number/3
+#s is overstringi make list, for item in list try make function 2 for loops
+
+varstring = 'over1','over2'
+print (type(varstring))
+for i in range(1,51):
+    a = 'over' + str(i)
+    varstring = varstring + tuple(a)
+print(varstring)
+print(type(varstring))
+toople = 1,2,3,4
+print(type(toople))
+    
+    
+#for i in range(50):
+#    s = 'over'+str(i)
+#    def s(number):
+#        return number/i
+#    print(s)
+
+def cutonionweight(weight, func):
+    return func(weight)
+    
+print(cutonionweight(5, over3))
+print(cutonionweight(5, over2))

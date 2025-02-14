@@ -61,6 +61,11 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Asked Lilith for clarity on what does 24savingthrows.py wants
 	+ Total 5 points
 - Week 6
+	+ Attended class Tuesday
+	+ Attended class Thursday
+	+ Asked Lilith a question about using for loops for making functions
+	+ Introduced myself to Alex and Jenna
+	+Total 4 points
 - Week 7
 - Week 8
 - Week 9
