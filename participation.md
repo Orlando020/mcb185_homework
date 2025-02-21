@@ -65,8 +65,13 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Attended class Thursday
 	+ Asked Lilith a question about using for loops for making functions
 	+ Introduced myself to Alex and Jenna
-	+Total 4 points
+	+ Total 4 points
 - Week 7
+	+ Attended class Tuesday
+	+ Attended class Thursday
+	+ Introduced myself to Kristine
+	+ Asked Lilith a question on what exactly does 'in' do
+	+ Total 4 points
 - Week 8
 - Week 9
 - Week 10

@@ -149,6 +149,7 @@ integer, string, string = tupletest
 #def over3(number):
 #    return number/3
 #s is overstringi make list, for item in list try make function 2 for loops
+#overall want to be able to define different varibale different 
 
 varstring = 'over1','over2'
 print (type(varstring))
@@ -159,8 +160,8 @@ print(varstring)
 print(type(varstring))
 toople = 1,2,3,4
 print(type(toople))
-    
-    
+
+
 #for i in range(50):
 #    s = 'over'+str(i)
 #    def s(number):
