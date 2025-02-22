@@ -108,10 +108,10 @@ short = 'abc'
 # import sys
 # print(sys.argv)
 
-# monty hall
+# monty hall doesnt work i need to subtract lists somehwo
 import random
 doors = [1,2,3]
-
+random.seed(153)
 def montysetup():
     cardoor = random.randint(1,3)
     if cardoor == 1: return cardoor, random.choice([2,3])
@@ -120,11 +120,15 @@ def montysetup():
     
 def montyswapper(goatreveal):
     pick = random.randint(1,3)
-    goatgaruntee = goatreveal
-    baddoor = [pick,goatgaruntee]
+    baddoor = [pick,goatreveal]
     for i in range(2):
         for j in range(3):
-            if not doors[j] == baddoor[i]: pick = doors[j]
+            matchpresent = 0
+            if doors[j] == baddoor[i]: 
+                pick = doors[j]
+                matchpresent = True
+            if not matchpresent: pick = doors[j]
+            print(doors[j],baddoor[i])
     return pick
     
 def montystayer(goatreveal):
@@ -133,27 +137,31 @@ def montystayer(goatreveal):
     
 def simulator(montyfunc, repeats):
     win = 0
-    for i in range(repeats+1):
+    for i in range(repeats):
         cardoor, goatreveal = montysetup()
         pick = montyfunc(goatreveal)
         if pick == cardoor: win += 1
     return win/repeats
 
-print(simulator(montyswapper,10))
-print(simulator(montystayer, 10))
+print(simulator(montyswapper,1))
+# print(simulator(montystayer,10))
 
-print(type(range(20)))
-for i in enumerate('stringo'):
-    print (i)
-nts = ['ok','howsy','nihao']
-names = ['jeery','jebediah','timmy']
-for i, (nt, name) in enumerate(zip(nts, names)):
-    print(i, nt, name)
-for i in zip(nts,names):
-    print (i)
+# print(type(range(20)))
+# for i in enumerate('stringo'):
+    # print (i)
+# nts = ['ok','howsy','nihao']
+# names = ['jeery','jebediah','timmy']
+# for i, (nt, name) in enumerate(zip(nts, names)):
+    # print(i, nt, name)
+# for i in zip(nts,names):
+    # print (i)
 #in is used in in range
-print(type(enumerate(nts)))
-print(type(zip(nts)))
+# print(type(enumerate(nts)))
+# print(type(zip(nts)))
 
 # if blank in blank is same as for loop
 # checking each element, 'in' has more stuff it can do
+
+#for i in range(1,3)
+#if 'ok' in nts:
+    
