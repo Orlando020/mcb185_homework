@@ -7,10 +7,10 @@ people = int(sys.argv[3])
 
 def bdaygacha(days, people):
     calendar = []
-    for i in range(days+1):
+    for i in range(days):
         calendar.append(0)
     for i in range(people):
-        guy = random.randint(0,364)
+        guy = random.randint(0,days)
         calendar[guy] += 1
         if calendar[guy] == 2: return True
     return False

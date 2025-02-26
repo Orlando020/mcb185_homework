@@ -108,43 +108,84 @@ short = 'abc'
 # import sys
 # print(sys.argv)
 
-# monty hall doesnt work i need to subtract lists somehwo
-import random
-doors = [1,2,3]
-random.seed(153)
-def montysetup():
-    cardoor = random.randint(1,3)
-    if cardoor == 1: return cardoor, random.choice([2,3])
-    if cardoor == 2: return cardoor, random.choice([1,3])
-    if cardoor == 3: return cardoor, random.choice([1,2])
+# monty hall
+# import random
+# doors = [1,2,3]
+# random.seed(153)
+# def montysetup():
+    # cardoor = random.randint(1,3)
+    # if cardoor == 1: return cardoor, random.choice([2,3])
+    # if cardoor == 2: return cardoor, random.choice([1,3])
+    # if cardoor == 3: return cardoor, random.choice([1,2])
     
-def montyswapper(goatreveal):
-    pick = random.randint(1,3)
-    baddoor = [pick,goatreveal]
-    for i in range(2):
-        for j in range(3):
-            matchpresent = 0
-            if doors[j] == baddoor[i]: 
-                pick = doors[j]
-                matchpresent = True
-            if not matchpresent: pick = doors[j]
-            print(doors[j],baddoor[i])
-    return pick
+# def montyswapper(goatreveal):
+    # pick = random.randint(1,3)
+    # baddoor = [pick,goatreveal]
+    # for i in range(2):
+        # for j in range(3):
+            # matchpresent = 0
+            # if doors[j] == baddoor[i]: 
+                # pick = doors[j]
+                # matchpresent = True
+            # if not matchpresent: pick = doors[j]
+            # print(doors[j],baddoor[i])
+    # return pick
     
-def montystayer(goatreveal):
-    pick = random.randint(1,3)
-    return pick
+# def montystayer(goatreveal):
+    # pick = random.randint(1,3)
+    # return pick
     
-def simulator(montyfunc, repeats):
-    win = 0
-    for i in range(repeats):
-        cardoor, goatreveal = montysetup()
-        pick = montyfunc(goatreveal)
-        if pick == cardoor: win += 1
-    return win/repeats
+# def simulator(montyfunc, repeats):
+    # win = 0
+    # for i in range(repeats):
+        # cardoor, goatreveal = montysetup()
+        # pick = montyfunc(goatreveal)
+        # if pick == cardoor: win += 1
+    # return win/repeats
 
-print(simulator(montyswapper,1))
+# print(simulator(montyswapper,1))
 # print(simulator(montystayer,10))
+
+
+
+
+
+
+
+
+#monty hall attempt 2 list subtraction i still need, can search the list but not eliminate bits, maybe .pop has targeting
+# import random
+# doors = [1,2,3]
+
+# def montysetup():
+    # cardoor = random.randint(1,3)
+    # pick = random.randint(1,3)
+    # potendoors = doors.copy()
+    # goatreveal = False
+    # if pick in potendoors: potendoors.pop(potendoors.index(pick))
+    # if cardoor in potendoors: potendoors.pop(potendoors.index(cardoor))
+    # if len(potendoors) == 2:
+        # goatreveal = random.choice(potendoors)
+    # else: goatreveal = potendoors[0]
+    # return cardoor, pick, goatreveal
+    
+# def montyswapper(cardoor, pick, goatreveal):
+    # wantdoor = doors.copy()
+    # if pick in wantdoor: wantdoor.pop(wantdoor.index(pick))
+    # if goatreveal in wantdoor: wantdoor.pop(wantdoor.index(goatreveal))
+    # pick = wantdoor[0]
+    # return pick, cardoor
+
+# win = 0
+# repeat = 1000
+# for i in range(repeat):
+    # a, b = montyswapper(*montysetup())
+    # if a == b: win +=1
+# print(win/repeat)
+
+
+
+
 
 # print(type(range(20)))
 # for i in enumerate('stringo'):
@@ -164,4 +205,30 @@ print(simulator(montyswapper,1))
 
 #for i in range(1,3)
 #if 'ok' in nts:
+
+
+# print('-'.join(list('ABCDE'))[3:6])
+
+#n50
+import sys
+
+numbers = []
+for arg in sys.argv[1:]:
+    numbers.append(int(arg))
+print(numbers)
+
+numbers.sort()
+longness_tot = 0
+
+for n in numbers:
+    longness_tot += n
+
+medpath = 0
+totprogress = 0
+for i in range(len(numbers)):
+    totprogress += numbers[i]
+    if longness_tot/2 < totprogress:
+        medpath = i
+        break
     
+print('The N50: ', numbers[medpath])
