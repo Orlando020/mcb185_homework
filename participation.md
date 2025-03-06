@@ -73,5 +73,9 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Asked Lilith a question on what exactly does 'in' do
 	+ Total 4 points
 - Week 8
+	+ Attended class Tuesday
+	+ Attended class Thursday
+	+ Introduced myself to Yu Che
+	+ Total 3 points
 - Week 9
 - Week 10

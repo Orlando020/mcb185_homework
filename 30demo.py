@@ -154,34 +154,34 @@ short = 'abc'
 
 
 #monty hall attempt 2 list subtraction i still need, can search the list but not eliminate bits, maybe .pop has targeting
-# import random
-# doors = [1,2,3]
+import random
+doors = [1,2,3]
 
-# def montysetup():
-    # cardoor = random.randint(1,3)
-    # pick = random.randint(1,3)
-    # potendoors = doors.copy()
-    # goatreveal = False
-    # if pick in potendoors: potendoors.pop(potendoors.index(pick))
-    # if cardoor in potendoors: potendoors.pop(potendoors.index(cardoor))
-    # if len(potendoors) == 2:
-        # goatreveal = random.choice(potendoors)
-    # else: goatreveal = potendoors[0]
-    # return cardoor, pick, goatreveal
+def montysetup():
+    cardoor = random.randint(1,3)
+    pick = random.randint(1,3)
+    potendoors = doors.copy()
+    goatreveal = False
+    if pick in potendoors: potendoors.pop(potendoors.index(pick))
+    if cardoor in potendoors: potendoors.pop(potendoors.index(cardoor))
+    if len(potendoors) == 2:
+        goatreveal = random.choice(potendoors)
+    else: goatreveal = potendoors[0]
+    return cardoor, pick, goatreveal
     
-# def montyswapper(cardoor, pick, goatreveal):
-    # wantdoor = doors.copy()
-    # if pick in wantdoor: wantdoor.pop(wantdoor.index(pick))
-    # if goatreveal in wantdoor: wantdoor.pop(wantdoor.index(goatreveal))
-    # pick = wantdoor[0]
-    # return pick, cardoor
+def montyswapper(cardoor, pick, goatreveal):
+    wantdoor = doors.copy()
+    if pick in wantdoor: wantdoor.pop(wantdoor.index(pick))
+    if goatreveal in wantdoor: wantdoor.pop(wantdoor.index(goatreveal))
+    pick = wantdoor[0]
+    return pick, cardoor
 
-# win = 0
-# repeat = 1000
-# for i in range(repeat):
-    # a, b = montyswapper(*montysetup())
-    # if a == b: win +=1
-# print(win/repeat)
+win = 0
+repeat = 1000
+for i in range(repeat):
+    a, b = montyswapper(*montysetup())
+    if a == b: win +=1
+print(win/repeat)
 
 
 
@@ -210,25 +210,41 @@ short = 'abc'
 # print('-'.join(list('ABCDE'))[3:6])
 
 #n50
-import sys
+# import sys
 
-numbers = []
-for arg in sys.argv[1:]:
-    numbers.append(int(arg))
-print(numbers)
+# numbers = []
+# for arg in sys.argv[1:]:
+    # numbers.append(int(arg))
+# print(numbers)
 
-numbers.sort()
-longness_tot = 0
+# numbers.sort()
+# longness_tot = 0
 
-for n in numbers:
-    longness_tot += n
+# for n in numbers:
+    # longness_tot += n
 
-medpath = 0
-totprogress = 0
-for i in range(len(numbers)):
-    totprogress += numbers[i]
-    if longness_tot/2 < totprogress:
-        medpath = i
-        break
+# medpath = 0
+# totprogress = 0
+# for i in range(len(numbers)):
+    # totprogress += numbers[i]
+    # if longness_tot/2 < totprogress:
+        # medpath = i
+        # break
     
-print('The N50: ', numbers[medpath])
+# print('The N50: ', numbers[medpath])
+
+
+
+
+#string format thingy
+# import sys
+
+# seq = sys.argv[1]
+# innercodon = 0
+
+# for i in range(len(seq)):
+     # if innercodon == 3: innercodon = 1
+     # else: innercodon += 1
+     # if i == len(seq)-2:break
+     # print(i,'  ',innercodon,'  ',seq[i:i+3])
+     # print()

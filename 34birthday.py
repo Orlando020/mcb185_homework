@@ -10,7 +10,7 @@ def bdaygacha(days, people):
     for i in range(days):
         calendar.append(0)
     for i in range(people):
-        guy = random.randint(0,days)
+        guy = random.randint(0,days-1) #randint uses different range things
         calendar[guy] += 1
         if calendar[guy] == 2: return True
     return False

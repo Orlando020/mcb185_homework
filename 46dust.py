@@ -1,4 +1,4 @@
-# python3 46dust.py ecoli.fa.gz 20 1.4
+# python3 46dust.py A.thaliana.fa.gz 20 1.4
 # 1.4 seems like a really high shannon entropy value its all n
 import sys
 import mcb185
@@ -36,4 +36,4 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
         
         if shannon < entro_thresh: newstring = newstring + 'N'
         elif shannon > entro_thresh: newstring = newstring + seq[i]
-    print(newstring)
+    print(newstring[:500]) #will literally fill entire console elsewise, remove for full look

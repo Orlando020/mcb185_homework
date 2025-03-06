@@ -17,14 +17,14 @@ def bdaygacha(days, people):
     
 #comparing preconstructed list 
 
-def bdaygachamat(days,people):
-    bdaylist = []
-    for i in range(people):
-        bdaylist.append(random.randint(0,364))
-    for i in range(len(bdaylist)):
-        for j in range(i + 1,len(bdaylist)):
-            if bdaylist[i] == bdaylist[j]: return True
-    return False
+# def bdaygachamat(days,people):
+    # bdaylist = []
+    # for i in range(people):
+        # bdaylist.append(random.randint(0,364))
+    # for i in range(len(bdaylist)):
+        # for j in range(i + 1,len(bdaylist)):
+            # if bdaylist[i] == bdaylist[j]: return True
+    # return False
 
 matches = 0
 for i in range(trials+1):
@@ -32,8 +32,8 @@ for i in range(trials+1):
     if result: matches += 1
 print(matches/trials)
 
-matchmat = 0
-for i in range(trials+1):
-    result = bdaygachamat(days,people)
-    if result: matchmat += 1
-print (matchmat/trials)
+# matchmat = 0
+# for i in range(trials+1):
+    # result = bdaygachamat(days,people)
+    # if result: matchmat += 1
+# print (matchmat/trials)
