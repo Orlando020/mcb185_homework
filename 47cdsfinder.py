@@ -31,6 +31,7 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
                         protstring = ''
                         active_protein = False
         print(okprot[1])
+
     revseq = sequence.revcomp(seq)
     for frame in range(3):
         protstring = ''
