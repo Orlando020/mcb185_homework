@@ -15,6 +15,7 @@ def bdaygacha(days, people):
         bdaylist.append(guy)
     return False
     
+    
 #comparing preconstructed list 
 
 # def bdaygachamat(days,people):

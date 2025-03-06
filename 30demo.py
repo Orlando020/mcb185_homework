@@ -186,7 +186,6 @@ print(win/repeat)
 
 
 
-
 # print(type(range(20)))
 # for i in enumerate('stringo'):
     # print (i)

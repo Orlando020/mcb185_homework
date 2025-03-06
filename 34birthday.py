@@ -5,6 +5,7 @@ trials = int(sys.argv[1])
 days = int(sys.argv[2])
 people = int(sys.argv[3])
 
+
 def bdaygacha(days, people):
     calendar = []
     for i in range(days):

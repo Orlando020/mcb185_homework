@@ -78,4 +78,5 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Introduced myself to Yu Che
 	+ Total 3 points
 - Week 9
+	+ 
 - Week 10
