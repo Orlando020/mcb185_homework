@@ -78,5 +78,10 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Introduced myself to Yu Che
 	+ Total 3 points
 - Week 9
-	+ 
+	+ Attended class Tuesday
+	+ Attended class Tuesday
+	+ Introduced myself to Jimmy
+	+ Demoed 53dust in class
+	+ Asked Lilith a question on why strings are acting slower than the lists
+	+ Total 5 points
 - Week 10
