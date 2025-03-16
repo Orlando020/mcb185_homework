@@ -94,9 +94,14 @@ def addacgt(listo):
 # print(addacgt(addacgt(['a','c','g','t'])))
 #can give kmer at k
 #now want kmer below k
-k = 8
+k = 4
+finlist = []
 for i in range(k-1):
-    if i == 0:innie = ['a','c','g','t']
-    outie = addacgt(innie)
-    innie = outie
-print(outie)
+    if i == 0:currk = k
+    for i in range(currk-1):
+        if i == 0:innie = ['a','c','g','t']
+        outie = addacgt(innie)
+        innie = outie
+    finlist.append(outie)
+    currk -= 1
+print(finlist)
