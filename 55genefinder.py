@@ -5,7 +5,7 @@ import sys
 
 # frame = 0 #0 1or 2 it does not look like gff files bother with frame just start and end
 #NC_000913.3     RefSeq  CDS     190     255     .       +       0
-#337 2799
+#337 2799 #known genes in ecoli
 #2801 2733
 #3734 5020
 #5683 6459

@@ -76,8 +76,27 @@ ntplisto = ['A','C','G','T']
         # print(indexing_list)
         # break
     
-    
+#function that takes a list of kmers and adds a k on it a c g takes
+# takes list of x returns list of 4x
 # print(kmergen(3))
 # print(type(kmergen(3)))
+# itetools: k = 3
+nucleo = ['a','c','g','t']
 
-def 
+def addacgt(listo):
+    kmerlist = []
+    for kmer in listo:
+        for ntp in nucleo:
+            prodkmer = kmer+ntp
+            kmerlist.append(str(prodkmer))
+    return kmerlist
+
+# print(addacgt(addacgt(['a','c','g','t'])))
+#can give kmer at k
+#now want kmer below k
+k = 8
+for i in range(k-1):
+    if i == 0:innie = ['a','c','g','t']
+    outie = addacgt(innie)
+    innie = outie
+print(outie)
