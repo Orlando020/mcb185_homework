@@ -19,12 +19,65 @@
 
 s = 'abcdefg'
 
-print(s[0:0])
+# print(s[0:0])
 
-string = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
-def rep_string(string, startex, replat):
-    newstring = string[0:startex] + replat + string[len(replat):]
-    return newstring
+# string = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+# def rep_string(string, startex, replat):
+    # newstring = string[0:startex] + replat + string[len(replat):]
+    # return newstring
 
 # print(rep_string(string, 5, 'bbbbbbbbbb'))
-print(string)
+# print(string)
+
+import sys
+import mcb185
+
+# for defline, seq in mcb185.read_fasta(sys.argv[1]):
+    
+# print(type(mcb185.read_fasta(sys.argv[1])))
+
+# listo = [1,41,511,617,3]
+# for io in listo:
+    # print(io)
+# stringo = 'adasvaavaablknablnabkabnlabnlaabklnbasaaaaaaaaald'
+# print(stringo.count('aaa'))
+
+# for nts in itertools.product('ACGT', repeat = k):
+    # kmer = ''.join(nts)
+
+# do without itertools
+
+# Designate order ACGT #ATG = 032 to 033 to 100, infinite number of variable to contain the counters or an infinley expending list to index if list not all threes next up digit should be added, 4 will be null, yet to be filled but kmer requres
+#                 0123
+#044, 144, 244,344,004, 014, 024,034,104,
+#swap for easy conditionals 0 is null 1234 is ACGT so 000, 100, 200, 300, 400, 110,120,
+# divvy up by k or purely by iteration, function should delive list of kmers up to k
+ntplisto = ['A','C','G','T']
+
+# def kmergen(k):
+    # kmerraw = []
+    # indexing_list = []
+    # active = None
+    # for i in range(k):
+        # indexing_list.append(1) #indexing list constructed
+    # print(indexing_list)
+    # while True:
+        # if 0 not in indexing_list:
+            # break
+        # if 0 in indexing_list:
+            # active = indexing_list.index(0)
+        # else: break
+        # if indexing_list[active] < 4:
+            # indexing_list[active] += 1
+            # continue
+        # elif indexing_list[active] == 4 and active >= 1:
+            # if indexing_list[active - 1] == 4: continue
+            # else: indexing_list[active-1] += 1
+        # print(indexing_list)
+        # break
+    
+    
+# print(kmergen(3))
+# print(type(kmergen(3)))
+
+def 

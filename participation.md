@@ -85,3 +85,8 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Asked Lilith a question on why strings are acting slower than the lists
 	+ Total 5 points
 - Week 10
+	+ Attended class Tuesday
+	+ Introduced myself to Catrinelle
+	+ Attended Coderie
+	+ Showed up to school
+	+ Total 4 points

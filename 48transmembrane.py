@@ -28,8 +28,9 @@ def hydrocalc(avgthreshold, window, seq):
             aamid = aalist.index(seq[i+j])
             totmid += hydrolist[aamid]
             if totmid/window >= avgthreshold: return True
-    
+k = 0
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
-    if hydrocalc(2.5, 8, seq[:30]) and hydrocalc(2,11,seq[30:]): print(defline[:30])
+    if hydrocalc(2.5, 8, seq[:30]) and hydrocalc(2,11,seq[30:]):
+        print(defline[:30])
    
     #30 aa and proline
