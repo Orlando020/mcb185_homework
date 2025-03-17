@@ -44,3 +44,9 @@ def gc_skew(seq):
     g = seq.count('G')
     if c+g == 0: return 0
     return (g-c)/(g+c)
+    
+def meltoligo(a, c, g, t):
+    if a+c+g+t <= 13: 
+        return (a+t)*2+(g+c)*2
+    else:
+        return 64.9 + 41*(g+c-16.4)/(a+c+g+t)
