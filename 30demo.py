@@ -154,36 +154,34 @@ short = 'abc'
 
 
 #monty hall attempt 2 list subtraction i still need, can search the list but not eliminate bits, maybe .pop has targeting
-import random
-doors = [1,2,3]
+# import random
+# doors = [1,2,3]
 
-def montysetup():
-    cardoor = random.randint(1,3)
-    pick = random.randint(1,3)
-    potendoors = doors.copy()
-    goatreveal = False
-    if pick in potendoors: potendoors.pop(potendoors.index(pick))
-    if cardoor in potendoors: potendoors.pop(potendoors.index(cardoor))
-    if len(potendoors) == 2:
-        goatreveal = random.choice(potendoors)
-    else: goatreveal = potendoors[0]
-    return cardoor, pick, goatreveal
+# def montysetup():
+    # cardoor = random.randint(1,3)
+    # pick = random.randint(1,3)
+    # potendoors = doors.copy()
+    # goatreveal = False
+    # if pick in potendoors: potendoors.pop(potendoors.index(pick))
+    # if cardoor in potendoors: potendoors.pop(potendoors.index(cardoor))
+    # if len(potendoors) == 2:
+        # goatreveal = random.choice(potendoors)
+    # else: goatreveal = potendoors[0]
+    # return cardoor, pick, goatreveal
     
-def montyswapper(cardoor, pick, goatreveal):
-    wantdoor = doors.copy()
-    if pick in wantdoor: wantdoor.pop(wantdoor.index(pick))
-    if goatreveal in wantdoor: wantdoor.pop(wantdoor.index(goatreveal))
-    pick = wantdoor[0]
-    return pick, cardoor
+# def montyswapper(cardoor, pick, goatreveal):
+    # wantdoor = doors.copy()
+    # if pick in wantdoor: wantdoor.pop(wantdoor.index(pick))
+    # if goatreveal in wantdoor: wantdoor.pop(wantdoor.index(goatreveal))
+    # pick = wantdoor[0]
+    # return pick, cardoor
 
-win = 0
-repeat = 1000
-for i in range(repeat):
-    a, b = montyswapper(*montysetup())
-    if a == b: win +=1
-print(win/repeat)
-
-
+# win = 0
+# repeat = 1000
+# for i in range(repeat):
+    # a, b = montyswapper(*montysetup())
+    # if a == b: win +=1
+# print(win/repeat)
 
 
 # print(type(range(20)))
@@ -247,3 +245,41 @@ print(win/repeat)
      # if i == len(seq)-2:break
      # print(i,'  ',innercodon,'  ',seq[i:i+3])
      # print()
+     
+import random
+doors = [1,2,3]
+
+def montysetup():
+    cardoor = random.randint(1,3)
+    pick = random.randint(1,3)
+    potendoors = doors.copy()
+    goatreveal = False
+    # print(pick)
+    potendoors.pop(potendoors.index(pick))
+    # print(pick,potendoors)
+    if cardoor in potendoors: potendoors.pop(potendoors.index(cardoor))
+    goatreveal = random.choice(potendoors)
+    return cardoor, pick, goatreveal
+    
+# print(montysetup(),'end')
+    
+def montyswapper(cardoor, pick, goatreveal):
+    wantdoor = doors.copy()
+    wantdoor.pop(wantdoor.index(pick))
+    wantdoor.pop(wantdoor.index(goatreveal))
+    pick = wantdoor[0]
+    return pick, cardoor
+
+win = 0
+repeat = 1000
+for i in range(repeat):
+    a, b = montyswapper(*montysetup())
+    if a == b: win +=1
+print(win/repeat,'swap')
+
+
+win = 0
+for i in range(repeat):
+    a,b,c = montysetup()
+    if a == b: win +=1
+print(win/repeat,'stay')
